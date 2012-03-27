@@ -18,4 +18,8 @@ Spork.prefork do
   Cucumber::Rails::Database.javascript_strategy = :truncation
 end
 
-Spork.each_run { }
+Spork.each_run { 
+  Dir[Rails.root.join("spec/support/**/*.rb")].each {|f| require f }
+  
+}
+

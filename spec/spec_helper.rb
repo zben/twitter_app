@@ -12,7 +12,7 @@ Spork.prefork do
   RSpec.configure do |config|
     config.use_transactional_fixtures = true
     config.infer_base_class_for_anonymous_controllers = false
-
+    config.mock_with :mocha
     config.include FactoryGirl::Syntax::Methods
   end
 end

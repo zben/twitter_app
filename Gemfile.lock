@@ -30,6 +30,8 @@ GEM
       multi_json (~> 1.0)
     addressable (2.2.6)
     arel (3.0.2)
+    bourne (1.0)
+      mocha (= 0.9.8)
     builder (3.0.0)
     capybara (1.1.2)
       mime-types (>= 1.16)
@@ -87,6 +89,8 @@ GEM
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
     mime-types (1.18)
+    mocha (0.9.8)
+      rake
     multi_json (1.2.0)
     multipart-post (1.1.4)
     nokogiri (1.5.2)
@@ -170,12 +174,14 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bourne
   coffee-rails (~> 3.2.1)
   cucumber-rails
   database_cleaner
   dynamic_form
   factory_girl_rails
   jquery-rails
+  mocha
   rails (= 3.2.1)
   rspec-rails
   sass-rails (~> 3.2.3)

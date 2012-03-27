@@ -43,6 +43,8 @@ group :test do
 	gem 'spork'
 	gem 'factory_girl_rails'
 	gem 'shoulda-matchers'
+	gem 'mocha'
+	gem 'bourne'
 end
 
 group :development, :test do

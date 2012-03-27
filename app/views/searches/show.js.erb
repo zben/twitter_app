@@ -1,0 +1,4 @@
+$('ul.tweets li').remove();
+<% @tweets.each do |tweet| %>
+	$('ul.tweets').append("<li><%= tweet.text %></li>");	
+<% end %>

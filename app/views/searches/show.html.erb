@@ -1,0 +1,11 @@
+<%=form_for :search, url: root_path, remote: true  do |f| %>
+  <%=f.label :keyword%>
+  <%=f.text_field :keyword %>
+  <%=f.submit "Search" %>
+<% end %>
+
+<ul class="tweets">
+	<% @tweets.each do |tweet| %>
+		<li><%=tweet.text%></li>
+	<% end %> 
+</ul>
